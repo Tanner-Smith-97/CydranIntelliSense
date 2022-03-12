@@ -16,13 +16,13 @@ Run >helloworld to start the extension...
 
 ## Known Issues
 
-Everything
+Most things are broken
 
 ## Release Notes
 
 Initial release
 
-### 0.0.1
+### 0.0.3
 
 Initial release 
 
