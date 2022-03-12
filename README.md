@@ -1,14 +1,10 @@
-# cydran-intellisense README
+# cydran-intellisense
 
 This is the README for your extension "cydran-intellisense". 
 
 ## Features
 
 Addeds some intellisense for Cydran
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
 ## Extension Settings
 
@@ -22,7 +18,7 @@ Most things are broken
 
 Initial release
 
-### 0.0.3
+### 0.0.4
 
 Initial release 
 
