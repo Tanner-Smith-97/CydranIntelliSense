@@ -1,6 +1,6 @@
 # cydran-intellisense
 
-This is the README for your extension "cydran-intellisense". 
+I made this for you...
 
 ## Features
 
@@ -18,7 +18,7 @@ Most things are broken
 
 Initial release
 
-### 0.0.4
+### 0.0.5
 
 Initial release 
 
