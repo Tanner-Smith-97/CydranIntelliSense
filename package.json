@@ -11,7 +11,9 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:cydran-intellisense.helloWorld"
+        "onCommand:cydran-intellisense.helloWorld",
+		"onLanguage:javascript",
+		"onLanguage:html"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
