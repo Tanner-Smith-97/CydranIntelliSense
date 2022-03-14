@@ -4,7 +4,7 @@
 	"description": "IntelliSense tool for the JavaScript Framwork Cydran",
 	"version": "0.0.1",
 	"engines": {
-		"vscode": "^1.65.0"
+		"vscode": "^1.46.0"
 	},
 	"publisher": "tannersmith",
 	"categories": [
@@ -22,6 +22,9 @@
 				"command": "cydran-intellisense.helloWorld",
 				"title": "Hello World"
 			}
+		],
+		"html.customData": [
+			"src/cydran.html-data.json"
 		]
 	},
 	"scripts": {
