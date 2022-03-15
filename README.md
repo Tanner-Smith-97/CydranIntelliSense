@@ -24,7 +24,7 @@ Working to get the HTML suggestions up and running
     - supports .message, .broadcast, .broadcastGlobally, .on (watch methods)
     - now works with vsCode 1.46.0 and newer
 
-### 0.0.7
+### 0.0.8
 
 Ya these numbers are messed up...
 
