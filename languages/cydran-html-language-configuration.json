@@ -1,0 +1,37 @@
+{
+    "version": 1.1,
+    "tags": [
+        {
+          "name": "foo",
+          "description": "The foo element",
+          "attributes": [
+            { "name": "bar" },
+            {
+              "name": "baz",
+              "values": [
+                {
+                  "name": "baz-val-1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalAttributes": [
+        { "name": "fooAttr", "description": "Foo Attribute" },
+        { "name": "xattr", "description": "X attributes", "valueSet": "x" }
+      ],
+      "valueSets": [
+        {
+          "name": "x",
+          "values": [
+            {
+              "name": "xval",
+              "description": "x value"
+            }
+          ]
+        }
+      ]
+
+
+  }

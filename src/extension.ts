@@ -48,7 +48,7 @@ export function activate(context: vscode.ExtensionContext) {
 			provideCompletionItems(document: vscode.TextDocument, position: vscode.Position) {
 
 				const message = new vscode.CompletionItem('message', vscode.CompletionItemKind.Method);
-				// ${1|this|or|this|}, ${2:SampleText}
+				// ${1|this,or,this|}, ${2:SampleText}
 				message.insertText = new vscode.SnippetString('message(\'${1:channelName}\', \'${2:messageType}\', ${3:somePayLoad});');
 				const messageDocs: any = new vscode.MarkdownString("Cydran: publish a message directly");
 				message.documentation = messageDocs;
@@ -99,23 +99,29 @@ export function activate(context: vscode.ExtensionContext) {
 		{
 			provideCompletionItems(document: vscode.TextDocument, position: vscode.Position) {
 
-				const ceach = new vscode.CompletionItem('each', vscode.CompletionItemKind.Value);
+				const ceach = new vscode.CompletionItem('each');
 				ceach.insertText = new vscode.SnippetString('each=\'${1:List}\'');
 				const ceachDocs: any = new vscode.MarkdownString("Cydran: Repeating Cydran stuctures (arrays). Works similarly to a foreach loop. requires a c-each-mode=");
 				ceach.documentation = ceachDocs;
 
-				const ceachMode = new vscode.CompletionItem('each-mode', vscode.CompletionItemKind.Value);
-				ceachMode.insertText = new vscode.SnippetString('each-mode=\'${1|none|generated|expression|}\'');
+				const ceachMode = new vscode.CompletionItem('each-mode');
+				ceachMode.insertText = new vscode.SnippetString('each-mode=\'${1|none,generated,expression|}\'');
 				const ceachModeDocs: any = new vscode.MarkdownString("Cydran: Repeating Cydran stuctures (arrays). Works similarly to a foreach loop. requires a c-each-mode=");
 				ceachMode.documentation = ceachModeDocs;
 
 
+				const reger = /([\w\[\]]+\-[\w\[\]\.]*)/g;
 
 				const linePrefix = document.lineAt(position).text.substring(0, position.character);
-				if (!linePrefix.endsWith('c-')) {
+				// if (!linePrefix.endsWith('c.')) {
+				// 	console.log('pfx: ' + linePrefix);
+				// 	return undefined;
+				// }
+				if (!linePrefix.match(reger)) {
 					console.log('pfx: ' + linePrefix);
 					return undefined;
 				}
+
 
 				console.log('pfx: match');
 				//temp return
