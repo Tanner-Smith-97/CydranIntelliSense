@@ -1,67 +1,67 @@
 {
   "name": "cydran-intellisense",
-	"displayName": "Cydran IntelliSense",
-	"description": "IntelliSense tool for the JavaScript Framwork Cydran",
-	"version": "0.0.2",
-	"engines": {
-		"vscode": "^1.46.0"
-	},
-	"publisher": "tannersmith",
-	"keywords": [
-		"HTML",
-		"JavaScript",
-		"Cydran"
-	],
-	"categories": [
-		"Programming Languages",
-		"Other"
-	],
-	"activationEvents": [
-        "onCommand:cydran-intellisense.helloWorld",
-		"onLanguage:javascript",
-		"onLanguage:html"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "cydran-intellisense.helloWorld",
-				"title": "Hello World"
-			}
-		],
-		"languages": [
-			{
-			"id": "cydran",
-				"aliases": [
-					"Cydran",
-					"cydran"
-				],
-				"extensions": [
-					".html"
-				],
-				"configuration": ".languages/cydran-html-language-configuration.json"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile && npm run lint",
-		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/vscode": "^1.46.0",
-		"@types/glob": "^7.2.0",
-		"@types/mocha": "^9.1.0",
-		"@types/node": "14.x",
-		"@typescript-eslint/eslint-plugin": "^5.12.1",
-		"@typescript-eslint/parser": "^5.12.1",
-		"eslint": "^8.9.0",
-		"glob": "^7.2.0",
-		"mocha": "^9.2.1",
-		"typescript": "^4.5.5",
-		"@vscode/test-electron": "^2.1.2"
-	}
+  "displayName": "Cydran IntelliSense",
+  "description": "IntelliSense tool for the JavaScript Framwork Cydran",
+  "version": "0.0.2",
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "publisher": "tannersmith",
+  "keywords": [
+    "HTML",
+    "Cydran"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:cydran-intellisense.helloWorld",
+    "onLanguage:javascript",
+    "onLanguage:html"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cydran-intellisense.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "languages": [
+      {
+        "id": "cydran",
+        "aliases": [
+          "Cydran",
+          "cydran"
+        ],
+        "extensions": [
+          ".html"
+        ],
+        "configuration": ".languages/cydran-html-language-configuration.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./ && copyfiles -f ./src/cydran.json out",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.46.0",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "@vscode/test-electron": "^2.1.2",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.9.0",
+    "glob": "^7.2.0",
+    "mocha": "^9.2.1",
+    "typescript": "^4.5.5"
+  }
 }

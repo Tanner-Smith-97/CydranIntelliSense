@@ -1,0 +1,14 @@
+{
+    "cydran": [
+        {
+            "completionItem": "c-each",
+            "snippetString": "c-each='${1:List}'",
+            "markdownString": "Cydran: Repeating Cydran stuctures (arrays). Works similarly to a foreach loop. requires a c-each-mode="
+        },
+        {
+            "completionItem": "c-each-mode",
+            "snippetString": "c-each-mode='${1|none,generated,expression|}'",
+            "markdownString": "Cydran: Repeating Cydran stuctures (arrays). This is c-each-mode"
+        }
+    ]
+}
