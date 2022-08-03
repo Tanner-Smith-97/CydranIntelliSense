@@ -27,7 +27,7 @@ function onLoad(): CydranJson {
 		return JSON.parse(readFileSync('./cydran.json', 'utf-8'));
 	} else if (existsSync(homedir() + '/.vscode/extensions/tannersmith.cydran-intellisense-0.0.9/out/cydran.json')) {
 		console.log('prod json loaded');
-		return JSON.parse(readFileSync(homedir() + '/.vscode/extensions/tannersmith.cydran-intellisense-0.0.9/out/cydran.json', 'utf-8'));
+		return JSON.parse(readFileSync(homedir() + '/.vscode/extensions/tannersmith.cydran-intellisense-0.0.11/out/cydran.json', 'utf-8'));
 	} else {
 		throw new Error('It didn\'t work :(');
 	}

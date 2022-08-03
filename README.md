@@ -26,8 +26,9 @@ This is just the a basic example
 ### 0.0.9  
 - Removed all .js capabilities
 - Example HTML is 'working'
-### 0.0.10
+### 0.0.11
 - Minor changes trying to fix some stuff for older versions
+- Now looks in proper place for config json
 
 #### pushing cause I forget
 - git commit
