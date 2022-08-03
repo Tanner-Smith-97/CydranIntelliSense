@@ -26,7 +26,7 @@ This is just the a basic example
 ### 0.0.9  
 - Removed all .js capabilities
 - Example HTML is 'working'
-### 0.0.11
+### 0.0.12
 - Minor changes trying to fix some stuff for older versions
 - Now looks in proper place for config json
 

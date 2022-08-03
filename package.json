@@ -2,7 +2,7 @@
   "name": "cydran-intellisense",
   "displayName": "Cydran IntelliSense",
   "description": "IntelliSense tool for the JavaScript Framwork Cydran",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "engines": {
     "vscode": "^1.46.0"
   },
