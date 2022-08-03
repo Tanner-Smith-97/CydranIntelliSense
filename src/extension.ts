@@ -2,6 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 import { readFileSync, existsSync } from 'fs';
+import { homedir } from 'os';
 
 type CydranJson = {
 	cydran: [
@@ -24,9 +25,9 @@ function onLoad(): CydranJson {
 	if (existsSync('./cydran.json')) {
 		console.log('debug json loaded');
 		return JSON.parse(readFileSync('./cydran.json', 'utf-8'));
-	} else if (existsSync('./resources/app/extensions/cydran-intellisense/cydran.json')) {
+	} else if (existsSync(homedir() + '/.vscode/extensions/tannersmith.cydran-intellisense-0.0.9/out/cydran.json')) {
 		console.log('prod json loaded');
-		return JSON.parse(readFileSync('./resources/app/extensions/cydran-intellisense/cydran.json', 'utf-8'));
+		return JSON.parse(readFileSync(homedir() + '/.vscode/extensions/tannersmith.cydran-intellisense-0.0.9/out/cydran.json', 'utf-8'));
 	} else {
 		throw new Error('It didn\'t work :(');
 	}

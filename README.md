@@ -26,5 +26,11 @@ This is just the a basic example
 ### 0.0.9  
 - Removed all .js capabilities
 - Example HTML is 'working'
+### 0.0.10
+- Minor changes trying to fix some stuff for older versions
 
+#### pushing cause I forget
+- git commit
+- git tag vx.x.x
+- git push --tags
 
