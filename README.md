@@ -29,9 +29,11 @@ This is just the a basic example
 ### 0.0.12
 - Minor changes trying to fix some stuff for older versions
 - Now looks in proper place for config json
+### 0.0.13
+- Finally fixed highlighting for html files that where already saved
 
 #### pushing cause I forget
 - git commit
-- git tag vx.x.x
+- git tag vx.x.x -m 'message'
 - git push --tags
 
