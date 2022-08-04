@@ -26,18 +26,6 @@
         "command": "cydran-intellisense.helloWorld",
         "title": "Hello World"
       }
-    ],
-    "languages": [
-      {
-        "id": "cydran",
-        "aliases": [
-          "Cydran",
-          "cydran"
-        ],
-        "extensions": [
-          ".html"
-        ]
-      }
     ]
   },
   "scripts": {
