@@ -2,13 +2,148 @@
     "cydran": [
         {
             "completionItem": "c-each",
-            "snippetString": "c-each='${1:List}'",
-            "markdownString": "Cydran: Repeating Cydran stuctures (arrays). Works similarly to a foreach loop. requires a c-each-mode="
+            "snippetString": "c-each=\"${1:List}\"",
+            "markdownString": "Cydran: Repeating Cydran stuctures (arrays). Works similarly to a foreach loop. requires a c-each-mode"
         },
         {
             "completionItem": "c-each-mode",
-            "snippetString": "c-each-mode='${1|none,generated,expression|}'",
-            "markdownString": "Cydran: Repeating Cydran stuctures (arrays). This is c-each-mode"
+            "snippetString": "c-each-mode=\"${1|none,generated,expression|}\"",
+            "markdownString": "Cydran: Required 'c-each' attribute indicating the 'c-each' identity strategy of list elements as indicated by reserved word"
+        },
+        {
+            "completionItem": "c-type",
+            "snippetString": "c-type=\"${1|empty|first|item|after|alt}\"",
+            "markdownString": "Cydran: Contextually Required attribute if pfx:each:mode indicates 'expression' with a computed id value within the pfx:each item context"
+        },        
+        {
+            "completionItem": "c-if",
+            "snippetString": "c-if=\"${1}\"",
+            "markdownString": "Cydran: Specific use cases may express requirements that exceed the capability of the default HTMLElement hidden attribute. Removal of a node from the DOM may be desireable while maintaining a reference/bookmark to desired location of placement if circumstances change"
+        },
+        {
+            "completionItem": "c-region-name",
+            "snippetString": "c-region-name=\"${1}\"",
+            "markdownString": "Cydran: Creates a named region where components can be injected"
+        },
+        {
+            "completionItem": "c-onclick",
+            "snippetString": "c-onclick=\"${1}\"",
+            "markdownString": "Cydran: Support of any/all event types as supported by the runtime platform. Access to the raw Javascript event is available through explicit argument reference"
+        },
+        {
+            "completionItem": "c-ondblclick",
+            "snippetString": "c-ondblclick=\"${1}\"",
+            "markdownString": "Cydran: Support of any/all event types as supported by the runtime platform. Access to the raw Javascript event is available through explicit argument reference"
+        },
+        {
+            "completionItem": "c-onfocus",
+            "snippetString": "c-focus=\"${1}\"",
+            "markdownString": "Cydran: Support of any/all event types as supported by the runtime platform. Access to the raw Javascript event is available through explicit argument reference"
+        },
+        {
+            "completionItem": "c-onblur",
+            "snippetString": "c-blur=\"${1}\"",
+            "markdownString": "Cydran: Support of any/all event types as supported by the runtime platform. Access to the raw Javascript event is available through explicit argument reference"
+        },
+        {
+            "completionItem": "c-onscroll",
+            "snippetString": "c-onscroll=\"${1}\"",
+            "markdownString": "Cydran: Support of any/all event types as supported by the runtime platform. Access to the raw Javascript event is available through explicit argument reference"
+        },
+        {
+            "completionItem": "c-onmouseout",
+            "snippetString": "c-onmouseout=\"${1}\"",
+            "markdownString": "Cydran: Support of any/all event types as supported by the runtime platform. Access to the raw Javascript event is available through explicit argument reference"
+        },
+        {
+            "completionItem": "c-onmouseover",
+            "snippetString": "c-onmouseover=\"${1}\"",
+            "markdownString": "Cydran: Support of any/all event types as supported by the runtime platform. Access to the raw Javascript event is available through explicit argument reference"
+        },
+        {
+            "completionItem": "c-dblclick",
+            "snippetString": "c-dblclick=\"${1}\"",
+            "markdownString": "Cydran: Support of any/all event types as supported by the runtime platform. Access to the raw Javascript event is available through explicit argument reference"
+        },
+        {
+            "completionItem": "c-onchange",
+            "snippetString": "c-onchange=\"${1}\"",
+            "markdownString": "Cydran: Support of any/all event types as supported by the runtime platform. Access to the raw Javascript event is available through explicit argument reference"
+        },
+        {
+            "completionItem": "c-onkeypress",
+            "snippetString": "c-onkeypress=\"${1}\"",
+            "markdownString": "Cydran: Support of any/all event types as supported by the runtime platform. Access to the raw Javascript event is available through explicit argument reference"
+        },
+        {
+            "completionItem": "c-name",
+            "snippetString": "c-name=\"${1}\"",
+            "markdownString": "Cydran: Avaliable only inside a <script type=\"cydran/region\" ...>: Indicates a declared and known mutable/changable region of the DOM within the scope and control of the Cydran framework"
+        },
+        {
+            "completionItem": "c-component",
+            "snippetString": "c-component=\"${1}\"",
+            "markdownString": "Cydran: Avaliable only inside a <script type=\"cydran/region\" ...>: key value of a registered Cydran component to be injected as the visual/functional representation of the model. Without this attribute, the node is considered a Cydran region"
+        },
+        {
+            "completionItem": "c-value",
+            "snippetString": "c-value=\"${1}\"",
+            "markdownString": "Cydran: Avaliable only inside a <script type=\"cydran/region\" ...>: Optional attribute of the model value reference assignment in the declared region/component space for component consumption"
+        },
+        {
+            "completionItem": "c-module",
+            "snippetString": "c-module=\"${1}\"",
+            "markdownString": "Cydran: Avaliable only inside a <script type=\"cydran/region\" ...>: Optional attribute with an explicit name value of the desired Cydran module association"
+        },
+        {
+            "completionItem": "c-lock",
+            "snippetString": "c-lock=\"${1}\"",
+            "markdownString": "Cydran: Avaliable only inside a <script type=\"cydran/region\" ...>: Optional attribute to indicate whether the component is replaceable. Default is false"
+        },
+        {
+            "completionItem": "c-id",
+            "snippetString": "c-id=\"${1}\"",
+            "markdownString": "Cydran: Creates a programatic reference to the HTML element the attribute is attached to in a component scoped map for later use/reference helping to avoiding messy or expensive DOM traversals during the component lifecycle"
+        },
+        {
+            "completionItem": "c-checked",
+            "snippetString": "c-checked=\"${1}\"",
+            "markdownString": "Cydran: The form element (either radio or checkbox) shall express a checked status"
+        },
+        {
+            "completionItem": "c-class",
+            "snippetString": "c-class=\"${1}\"",
+            "markdownString": "Cydran: The named CSS class (i.e. someClass) will be added to the HTMLElement class attribute if the expression (i.e. m().items.length > 0) evaluates truthy"
+        },
+        {
+            "completionItem": "c-enabled",
+            "snippetString": "c-enabled=\"${1}\"",
+            "markdownString": "Cydran: HTMLElement enabled boolean attribute expressed or removed by expression evaluation"
+        },
+        {
+            "completionItem": "c-readonly",
+            "snippetString": "c-readonly=\"${1}\"",
+            "markdownString": "Cydran: HTMLElement readonly boolean attribute expressed or removed by expression evaluation"
+        },
+        {
+            "completionItem": "c-style",
+            "snippetString": "c-style=\"${1}\"",
+            "markdownString": "Cydran: CSS style representation as expressed through provided expression and merged into associated"
+        },
+        {
+            "completionItem": "c-force-focus",
+            "snippetString": "c-force-focus=\"${1}\"",
+            "markdownString": "Cydran: Force focus on a specific DOM element"
+        },
+        {
+            "completionItem": "c-model",
+            "snippetString": "c-model=\"${1}\"",
+            "markdownString": "Cydran: Binding representation of the model to the presentation. Any modification of the value representation of the input type will be propagated to the model and visa versa. Representations with more than one possible value, such as a multi-select list, should be represented as an Array object"
+        },
+        {
+            "completionItem": "c-hidden",
+            "snippetString": "c-hidden=\"${1}\"",
+            "markdownString": "Cydran: HTMLElement hidden boolean attribute expressed or removed by expression evaluation"
         }
     ]
 }
