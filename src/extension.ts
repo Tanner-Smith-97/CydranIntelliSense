@@ -25,9 +25,9 @@ function onLoad(): CydranJson {
 	if (existsSync('./cydran.json')) {
 		console.log('debug json loaded');
 		return JSON.parse(readFileSync('./cydran.json', 'utf-8'));
-	} else if (existsSync(homedir() + '/.vscode/extensions/tannersmith.cydran-intellisense-0.0.13/out/cydran.json')) {
+	} else if (existsSync(homedir() + '/.vscode/extensions/tannersmith.cydran-intellisense-0.0.14/out/cydran.json')) {
 		console.log('prod json loaded');
-		return JSON.parse(readFileSync(homedir() + '/.vscode/extensions/tannersmith.cydran-intellisense-0.0.13/out/cydran.json', 'utf-8'));
+		return JSON.parse(readFileSync(homedir() + '/.vscode/extensions/tannersmith.cydran-intellisense-0.0.14/out/cydran.json', 'utf-8'));
 	} else {
 		throw new Error('It didn\'t work :(');
 	}
@@ -64,6 +64,10 @@ export function activate(context: vscode.ExtensionContext) {
 					item.documentation = itemDocs;
 					cydranCompletionItems.push(item);
 				});
+
+
+				// console.log(document.lineAt(position).text.substring(0, position.character));
+				
 
 				// const ceach = new vscode.CompletionItem('c-each');
 				// ceach.insertText = new vscode.SnippetString('c-each=\'${1:List}\'');

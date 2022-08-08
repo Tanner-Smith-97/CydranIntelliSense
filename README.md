@@ -31,6 +31,8 @@ This is just the a basic example
 - Now looks in proper place for config json
 ### 0.0.13
 - Finally fixed highlighting for html files that where already saved
+### 0.0.14
+- Added some extra sample auto completes for testing reasons
 
 #### pushing cause I forget
 - git commit
