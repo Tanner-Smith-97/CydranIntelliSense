@@ -2,7 +2,7 @@
     "cydran": [
         {
             "completionItem": "c-each",
-            "snippetString": "c-each=\"${1:List}\"",
+            "snippetString": "c-each=\"${1:m().list}\"",
             "markdownString": "Cydran: Repeating Cydran stuctures (arrays). Works similarly to a foreach loop. requires a c-each-mode"
         },
         {
@@ -12,9 +12,9 @@
         },
         {
             "completionItem": "c-type",
-            "snippetString": "c-type=\"${1|empty|first|item|after|alt}\"",
-            "markdownString": "Cydran: Contextually Required attribute if pfx:each:mode indicates 'expression' with a computed id value within the pfx:each item context"
-        },        
+            "snippetString": "c-type=\"${1|empty,first,item,after,alt|}\"",
+            "markdownString": "Cydran: Contextually Required attribute if c-each-mode indicates 'expression' with a computed id value within the c-each item context"
+        },
         {
             "completionItem": "c-if",
             "snippetString": "c-if=\"${1}\"",
@@ -24,6 +24,16 @@
             "completionItem": "c-region-name",
             "snippetString": "c-region-name=\"${1}\"",
             "markdownString": "Cydran: Creates a named region where components can be injected"
+        },
+        {
+            "completionItem": "c-region-component",
+            "snippetString": "c-region-component=\"${1}\"",
+            "markdownString": "Cydran: Key of Component to be injected from registry."
+        },
+        {
+            "completionItem": "c-region-value",
+            "snippetString": "c-region-value=\"${1}\"",
+            "markdownString": "Cydran: Value to be proxied into component. Evaluates in the context of v() and m()."
         },
         {
             "completionItem": "c-onclick",
@@ -78,7 +88,7 @@
         {
             "completionItem": "c-name",
             "snippetString": "c-name=\"${1}\"",
-            "markdownString": "Cydran: Avaliable only inside a <script type=\"cydran/region\" ...>: Indicates a declared and known mutable/changable region of the DOM within the scope and control of the Cydran framework"
+            "markdownString": "Cydran: Avaliable only inside a <script type=\"cydran/region\" ...>: Indicates a declared and known mutable/changable region of the DOM within the scope and control of the Cydran framework; use forElement('name') to access this element."
         },
         {
             "completionItem": "c-component",
